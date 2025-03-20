@@ -16,13 +16,13 @@ export default function Details() {
 
 console.log({getFavorit});
 
-  // useEffect(() => {
-  //   if (movie) {
-  //     fetchMovieDetails(movie.id).then((data) => setMovieDetails(data));
-  //   }
-  // }, [movie]);
+  useEffect(() => {
+    if (movie) {
+      fetchMovieDetails(movie.id).then((data) => setMovieDetails(data));
+    }
+  }, [movie]);
 
-  // console.log({movieDetails});
+  console.log({movieDetails});
   
 
   // useEffect(() => {
