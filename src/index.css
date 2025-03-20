@@ -4,6 +4,26 @@
   padding: 0;
 }
 
+/* hero-section */
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-left: 32px;
+}
+
+/* movies section styles */
+
 .latest,
 .action,
 .comedy,
@@ -11,6 +31,17 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  height: 300px;
+}
+
+.Latest {
+  margin-top: 40px;
+}
+
+.title-paragraph {
+  color: white;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .movies {
@@ -23,7 +54,6 @@
   scrollbar-color: black transparent;
 }
 
-/* movies section styles */
 .one {
   display: flex;
   position: relative;
@@ -55,7 +85,14 @@
   left: 530px;
   border-width: 1px;
   border-radius: 12px;
-  margin-inline: 40px;
+}
+
+.over {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  width: 550px;
+  text-align: left;
 }
 
 /* details pages similar section */

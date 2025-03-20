@@ -1,24 +1,47 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
-import fetchMovieDetails from "../context/moviesDetails";
+import {fetchMovieDetails , fetchById}from "../context/moviesDetails";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-import MovieslistsLike from "../components/MovieslistsLike";
+import Movieslists from "../components/MovieslistsLike";
 import fetchMovieLike from "../context/similarlike";
+
 
 export default function Details() {
   const location = useLocation();
   const { movie } = location.state || {};
   const [movieDetails, setMovieDetails] = useState(null);
   const [like, setLike] = useState([])
+  const getFavorit = localStorage.getItem('movieId')
 
+console.log({getFavorit});
 
-  useEffect(() => {
-    // console.log(movie)
-    if (movie) {
-      fetchMovieDetails(movie.id).then((data) => setMovieDetails(data));
-    }
-  }, [movie]);
+  // useEffect(() => {
+  //   if (movie) {
+  //     fetchMovieDetails(movie.id).then((data) => setMovieDetails(data));
+  //   }
+  // }, [movie]);
+
+  // console.log({movieDetails});
+  
+
+  // useEffect(() => {
+  //   const fetchFavorites = async () => {
+  //     try {
+  //       const response = await fetchById(getFavorit);
+  //       console.log(response.data);
+        
+  //       // setFavorites(response.data);
+  //     } catch (error) {
+  //       console.error('Error fetching favorites:', error);
+  //       // Handle error state if needed
+  //     }
+  //   };
+  
+  //   fetchFavorites();
+  // }, []);
+  
+  
 
   if (!movie) {
     return <div>No movie data available</div>;
@@ -40,7 +63,7 @@ export default function Details() {
 
   return (
     <>
-      <div
+      <div className="hero-section"
         style={{
           backgroundImage: `linear-gradient(rgba(58, 64, 66, 0.5), rgba(47, 54, 56, 0.5)), url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
           width: "100%",
@@ -51,6 +74,7 @@ export default function Details() {
         }}
       >
         <NavBar />
+        <div className="hero-infos">
         <h1>{movie.title}</h1>
         {/* <img
           src={
@@ -60,10 +84,10 @@ export default function Details() {
           }
           alt={movie.original_title}
         /> */}
-        <div className="sp">
+        {/* <div className="sp">
           <button className="btn">CBFC:U/A</button>
           <p>Action . Adventure . 2h28m</p>
-        </div>
+        </div> */}
         <p className="over">{movie.overview}</p>
         <div className="s">
           <button className="btnone">
@@ -73,7 +97,7 @@ export default function Details() {
           <button className="btntwo">Add Watchlist</button>
         </div>
 
-        {movieDetails && <div></div>}
+        {movieDetails && <div></div>}</div>
       </div>
 
   <div className="more-like">
@@ -81,7 +105,7 @@ export default function Details() {
           <div className="rep">
           {like.map((movie) => (
             <div className="more-movies" key={movie.id}  >
-              <MovieslistsLike movie={movie}  />
+              <Movieslists movie={movie}  />
             </div>
           ))}
           </div>

@@ -113,6 +113,10 @@ h2 {
   height: 57px;
 }
 
+.iconText {
+  font-size: 6px;
+  cursor: pointer;
+}
 
 .buttons {
   display: flex;
