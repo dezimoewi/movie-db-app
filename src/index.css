@@ -1,20 +1,123 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.latest, 
-.action, 
-.comedy, 
+.latest,
+.action,
+.comedy,
 .romance {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .movies {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+/* movies section styles */
+.one {
+  display: flex;
+  position: relative;
+  margin: 0 50px;
+  p {
+    font-weight: 1000;
+    font-size: 280px;
+    line-height: 298.34px;
+    z-index: 1;
+  }
+}
+
+.latest-movies img {
+  width: 138px;
+  height: 178px;
+  border-width: 1px;
+  border-radius: 12px;
+  position: absolute;
+  top: 92px;
+  left: 80px;
+  z-index: 10;
+}
+
+.romance-movies img,
+.action-movies img,
+.comedy-movies img {
+  width: 251px;
+  height: 171px;
+  left: 530px;
+  border-width: 1px;
+  border-radius: 12px;
+  margin-inline: 40px;
+}
+
+/* details pages similar section */
+.rep {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+
+  img {
+    width: 217px;
+    height: 200px;
+  }
+}
+
+/* footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid #b7b3b3;
+  padding-top: 6rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: 0%;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #b7b3b3;
+  }
+}
+
+.footer-web {
+  p {
+    background-color: #b7b3b3;
+    border: 1px solid white;
+    color: white;
+    width: 140px;
+    height: 35px;
+    border-radius: 36px;
+    align-content: center;
+  }
+}
+
+.footer-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  align-items: center;
+  padding: 16px;
+
+  p {
+    color: #b7b3b3;
+  }
 }

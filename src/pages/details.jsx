@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
 import fetchMovieDetails from "../context/moviesDetails";
 import NavBar from "../components/navbar";
-// import Footer from "../components/footer";
-// import fetchMovieLike from "../components/likes";
+import Footer from "../components/footer";
+import MovieslistsLike from "../components/MovieslistsLike";
 import fetchMovieLike from "../context/similarlike";
 
 export default function Details() {
@@ -76,11 +76,11 @@ export default function Details() {
         {movieDetails && <div></div>}
       </div>
 
-  <div className="bamm">
+  <div className="more-like">
         <h1>More Likes</h1>
           <div className="rep">
           {like.map((movie) => (
-            <div key={movie.id}  >
+            <div className="more-movies" key={movie.id}  >
               <MovieslistsLike movie={movie}  />
             </div>
           ))}

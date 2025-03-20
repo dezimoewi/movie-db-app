@@ -9,11 +9,11 @@ function NavBar() {
               <h1>STREAM<span>X</span></h1>
             </div>
             <div className="navigation">
-              <a href="Home"><li>Home</li></a>
-              <a href="Movies"><li>Movies</li></a>
-              <a href="Series"><li>Series</li></a>
-              <a href="Trending"><li>Trending</li></a>
-              <a href="Categories"><li>Categories</li></a>
+              <a href="/"><li>Home</li></a>
+              <a href="/Details/:id"><li>Movies</li></a>
+              <a href="/Details/:id"><li>Series</li></a>
+              <a href="/Details/:id"><li>Trending</li></a>
+              <a href="/Details/:id"><li>Categories</li></a>
             </div>
           </div>
   

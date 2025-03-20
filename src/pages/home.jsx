@@ -11,6 +11,7 @@ import { fetchMovieTwo } from '../context/context';
 import Comedy from '../components/Comedy';
 import { fetchMovieThree } from '../context/context';
 import { useNavigate } from "react-router";
+import Footer from '../components/footer';
 
 function Home() {
 
@@ -95,7 +96,7 @@ function Home() {
         <h2>Latest & Trending</h2>
        <div className="movies" >
        {movies.map((movie, index) => (
-          <div key={movie.id} onClick={() => handleMovieClick(movie)}>
+          <div className='latest-movies' key={movie.id} onClick={() => handleMovieClick(movie)}>
           <Movieslists movie={movie} index={index + 1} />
         </div>
         ))}
@@ -106,7 +107,7 @@ function Home() {
           <h2>Action</h2>
         <div className="movies">
         {release.map((movie) => (
-          <div key={movie.id} onClick={() => handleMovieClick(movie)} >
+          <div className='action-movies' key={movie.id} onClick={() => handleMovieClick(movie)} >
             <MoviesRelease movie={movie}  />
           </div>
         ))}
@@ -117,7 +118,7 @@ function Home() {
             <h2>Romance & Drama</h2>
        <div className="movies">
        {action.map((movie) => (
-          <div key={movie.id} onClick={() => handleMovieClick(movie)}>
+          <div className='romance-movies' key={movie.id} onClick={() => handleMovieClick(movie)}>
             <RomanceMovies movie={movie}  />
           </div>
         ))}
@@ -128,12 +129,13 @@ function Home() {
             <h2>Comedy</h2>
        <div className="movies">
        {comedy.map((movie) => (
-        <div key={movie.id} onClick={() => handleMovieClick(movie)}>
+        <div className='comedy-movies' key={movie.id} onClick={() => handleMovieClick(movie)}>
           <Comedy  movie={movie}  />
         </div>
         ))}
        </div>
         </div>
+       <Footer/>
       </>
   )
 }
