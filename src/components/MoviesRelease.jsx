@@ -5,10 +5,9 @@ function MoviesRelease({movie}  ) {
     <div className="two" style={{cursor: 'pointer'}}>
 
         {/* <h2>{movie.original_title}</h2> */}
-      <img src={
+      <img src= {
         movie.poster_path
         ?`https://image.tmdb.org/t/p/w500${movie.poster_path}`: 'fallback_image_url'} alt={movie.original_title} />
-        <p className="title-paragraph">{movie.original_title}</p>
     </div>
   );
 }
