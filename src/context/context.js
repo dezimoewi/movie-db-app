@@ -1,8 +1,7 @@
 
-
-const API_KEY = "7e6a1ec889d282a86311b6babd0a9b70";
-const BASE_MOVIE_URL = "https://image.tmdb.org/3";
-const MOVIE_URL = `https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}`;
+export const API_KEY = "7e6a1ec889d282a86311b6babd0a9b70";
+export const BASE_MOVIE_URL = "https://image.tmdb.org/3";
+ export const MOVIE_URL = `https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}`;
 
 export const fetchMovie= async() => {
     

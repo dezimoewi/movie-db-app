@@ -4,11 +4,9 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-top">
           <div className="footer-comp">
-              <h3>Company</h3>
-              <p>About Us</p>
-            <p>Careers</p> 
-            
-            
+            <h3>Company</h3>
+            <p>About Us</p>
+            <p>Careers</p>
           </div>
           <div className="footer-comp">
             <h3>Need Help</h3>
@@ -18,22 +16,26 @@ export default function Footer() {
 
           <div className="footer-comp">
             <h3>Veiw Website in</h3>
-            <p>√ English ⩒</p>
+            <button className="button-one">√ English ⩒</button>
           </div>
 
           <div className="footer-comp">
             <h3>Social Media</h3>
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <div className="ctn-one">
+              <div className="footer-img">
+                <img src="src/assets/instagram.png" alt="instagram" />
+              </div>
+              <div className="footer-img">
+                <img src="src/assets/Group.png" alt="twitter" />
+              </div>
             </div>
           </div>
 
           <div className="footer-comp">
             <h3>Download Our App</h3>
-            <div>
-              <img src="\src\assets\Rectangle 4 (1).png" alt="" /> <br />
-              <img src="\src\assets\Rectangle 5.png" alt="" />
+            <div className="ctn">
+              <img src="src/assets/Rectangle 5.png" alt="apple" />
+              <img src="src/assets/Rectangle 4 (1).png" alt="playstore" /> <br />
             </div>
           </div>
         </div>

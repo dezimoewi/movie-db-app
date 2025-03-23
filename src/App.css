@@ -105,6 +105,19 @@ h2 {
 
 .hero-text p {
   display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.details-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  btn-two {
+    width: 32px;
+    height: 20px;
+  }
 }
 
 .hero-paragraph {

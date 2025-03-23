@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/footer";
 import Details from "./pages/details";
 import Home from "./pages/home";
 import { BrowserRouter, Route, Routes } from "react-router";
@@ -11,6 +12,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Details/:id" element={<Details />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

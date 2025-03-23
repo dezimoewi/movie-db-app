@@ -10,7 +10,6 @@ import { fetchMovieTwo } from "../context/context";
 import Comedy from "../components/Comedy";
 import { fetchMovieThree } from "../context/context";
 import { useNavigate } from "react-router";
-import Footer from "../components/footer";
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -202,7 +201,6 @@ function Home() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

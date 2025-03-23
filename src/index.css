@@ -98,24 +98,91 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 19.36px;
-  width: 550px;
+  width: 100%;
   text-align: left;
 }
 
 /* details pages similar section */
 .rep {
-  align-items: center;
+  align-items: center; 
   gap: 16px;
   display: flex;
   overflow-x: auto;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: black transparent;
+  padding-left: 32px;
 
   img {
     width: 217px;
     height: 200px;
   }
+}
+
+.more-like {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.title-movie h1 {
+  display: flex;
+  text-align: left;
+  font-family: Verdana, Tahoma,;
+  padding-left: 32px;
+  /* padding-bottom: 5rem; */
+}
+
+.hero-text-details {
+  display: flex;
+  gap: 10px;
+  padding-left: 32px;
+  align-items: center;
+}
+
+.btn {
+  width: 75px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  gap: 10px;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  border: none;
+}
+
+.details-button {
+  display: flex;
+  text-align: left;
+  padding-left: 32px;
+  padding-top: 16px;
+}
+
+.details-text {
+  display: flex;
+  text-align: left;
+  padding-left: 32px;
+  padding-top: 32px;
+
+  p {
+    display: flex;
+    font-size: 18px;
+  }
+}
+
+.more-movies  img{
+  width: 301px;
+  height: 169px;
+  border-radius: 18px;
+}
+
+.search-button {
+  background-color: blue;
+  color: white;
 }
 
 /* footer styles */
@@ -128,6 +195,7 @@
   justify-content: space-between;
   padding-left: 32px;
   padding-right: 32px;
+  margin-top: 32px;
 }
 
 .footer-top {
@@ -151,6 +219,36 @@
   h3 {
     font-size: 18px;
   }
+}
+
+.ctn-one {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.ctn {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-one {
+  width: 130.7px;
+  height: 34px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5px;
+  background-color: rgb(252, 251, 251);
+}
+
+.footer-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: rgb(57, 59, 59);
 }
 
 .footer-bottom {
