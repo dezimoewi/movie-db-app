@@ -63,7 +63,6 @@ export const fetchMovieOne= async() => {
 
 const Base_Url =`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&include_adult=false&include_video=false&language=en-US&page=15&sort_by=popularity.desc`;
 export const fetchMovieTwo= async() => {
-    
  const options = {
     method: "GET",
     headers: {

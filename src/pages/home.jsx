@@ -61,6 +61,7 @@ function Home() {
 
   return (
     <>
+    <div className="header-container">
       <NavBar />
       <div className="hero-content">
         <div className="hero-image">
@@ -155,6 +156,7 @@ function Home() {
             </div>
           ))}
         </div>
+      </div>
       </div>
 
       <div className="action">
