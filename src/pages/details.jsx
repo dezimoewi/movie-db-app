@@ -31,7 +31,7 @@ export default function Details() {
       <div
         className="hero-section"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(10,10,15,0.3) 0%, rgba(10,10,15,0.85) 70%, rgba(10,10,15,1) 100%), url(https://image.tmdb.org/t/p/original${movie.backdrop_path || movie.poster_path})`,
+          backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path || movie.poster_path})`,
           width: "100%",
           minHeight: "70vh",
           backgroundRepeat: "no-repeat",
