@@ -37,7 +37,7 @@ export default function Search() {
 
   return (
     <>
-      <div className="search-bar" style={{ gap: "5px", alignItems: "center" }}>
+      <div className="search-bar">
         <div id="input">
           <input
             onChange={handleQuery}
@@ -49,8 +49,8 @@ export default function Search() {
             Search
           </button>
         </div>
-        {loading && <p>Loading...</p>}
-        {error && <p>Error: {error.message}</p>}
+        {loading && <p className="search-loading">Loading...</p>}
+        {error && <p className="search-error">Error: {error.message}</p>}
       </div>
 
       <MovieModal
