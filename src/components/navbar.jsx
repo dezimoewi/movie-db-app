@@ -14,17 +14,11 @@ function NavBar() {
             <a href="/">
               <li>Home</li>
             </a>
-            <a href="/Details/:id">
-              <li>Movies</li>
+            <a href="/favorites">
+              <li>Favorites</li>
             </a>
-            <a href="/Details/:id">
-              <li>Series</li>
-            </a>
-            <a href="/Details/:id">
+            <a href="/">
               <li>Trending</li>
-            </a>
-            <a href="/Details/:id">
-              <li>Categories</li>
             </a>
           </div>
           <Search/>

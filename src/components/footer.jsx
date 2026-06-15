@@ -1,3 +1,8 @@
+import instagramIcon from "../assets/instagram.png";
+import groupIcon from "../assets/Group.png";
+import appleStore from "../assets/rectangle-5.png";
+import playStore from "../assets/rectangle-4.png";
+
 export default function Footer() {
   return (
     <>
@@ -23,10 +28,10 @@ export default function Footer() {
             <h3>Social Media</h3>
             <div className="ctn-one">
               <div className="footer-img">
-                <img src="src/assets/instagram.png" alt="instagram" />
+                <img src={instagramIcon} alt="instagram" />
               </div>
               <div className="footer-img">
-                <img src="src/assets/Group.png" alt="twitter" />
+                <img src={groupIcon} alt="twitter" />
               </div>
             </div>
           </div>
@@ -34,8 +39,8 @@ export default function Footer() {
           <div className="footer-comp">
             <h3>Download Our App</h3>
             <div className="ctn">
-              <img src="src/assets/Rectangle 5.png" alt="apple" />
-              <img src="src/assets/Rectangle 4 (1).png" alt="playstore" /> <br />
+              <img src={appleStore} alt="apple" />
+              <img src={playStore} alt="playstore" /> <br />
             </div>
           </div>
         </div>
