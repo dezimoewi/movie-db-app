@@ -1,5 +1,5 @@
 
-export const API_KEY = "7e6a1ec889d282a86311b6babd0a9b70";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 export const BASE_MOVIE_URL = "https://image.tmdb.org/3";
  export const MOVIE_URL = `https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}`;
 
@@ -10,7 +10,7 @@ export const fetchMovie= async() => {
        headers: {
          accept: "application/json",
          Authorization:
-           "7e6a1ec889d282a86311b6babd0a9b70",
+           `Bearer ${API_KEY}`,
        },
      };
        try {
@@ -39,7 +39,7 @@ export const fetchMovieOne= async() => {
     headers: {
       accept: "application/json",
       Authorization:
-        "7e6a1ec889d282a86311b6babd0a9b70",
+        `Bearer ${API_KEY}`,
     },
   };
     try {
@@ -68,7 +68,7 @@ export const fetchMovieTwo= async() => {
     headers: {
       accept: "application/json",
       Authorization:
-        "7e6a1ec889d282a86311b6babd0a9b70",
+        `Bearer ${API_KEY}`,
     },
   };
     try {
@@ -97,7 +97,7 @@ export const fetchMovieThree= async() => {
     headers: {
       accept: "application/json",
       Authorization:
-        "7e6a1ec889d282a86311b6babd0a9b70o",
+        `Bearer ${API_KEY}`,
     },
   };
     try {

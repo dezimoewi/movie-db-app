@@ -4,8 +4,7 @@ function Button() {
         <>
          <div className="buttons">
                 <button className="btnone">
-                  <img src="\src\assets\Group.png" alt="" />
-                  Watch Now
+                  ▶ Watch Now
                 </button>
                 <button className="btntwo">More Info</button>
               </div>

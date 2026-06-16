@@ -1,4 +1,4 @@
-const API_KEY = "7e6a1ec889d282a86311b6babd0a9b70";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const BASE_MOVIE_URL = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&include_video=false&language=en-US&page=1&sort_by=popularity.desc`;
 export const fetchMovieDetails = async () => {
@@ -6,7 +6,7 @@ export const fetchMovieDetails = async () => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization: "7e6a1ec889d282a86311b6babd0a9b70",
+      Authorization: `Bearer ${API_KEY}`,
     },
   };
   try {
